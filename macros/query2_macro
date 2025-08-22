@@ -1,0 +1,6 @@
+select my_finds.find_id, my_crops.name, my_fields.field_id
+from my_finds, my_crops, my_fields
+where my_crops.crop=my_fields.crop
+and my_finds.xcoord between my_fields.lowx and my_fields.hix
+and my_finds.ycoord between my_fields.lowy and my_fields.hiy
+and my_crops.crop='1';

@@ -1,0 +1,55 @@
+
+SQL*Loader: Release 21.0.0.0.0 - Production on Wed Oct 30 13:12:20 2024
+Version 21.3.0.0.0
+
+Copyright (c) 1982, 2021, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   my_fields.ctl
+Data File:      fields.dat
+  Bad File:     fields.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 2
+Errors allowed: 50
+Bind array:     250 rows, maximum of 1048576 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table MY_FIELDS, loaded from every logical record.
+Insert option in effect for this table: REPLACE
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+FIELD_ID                            FIRST     *  WHT      CHARACTER            
+LOWX                                 NEXT     *  WHT      CHARACTER            
+LOWY                                 NEXT     *  WHT      CHARACTER            
+HIX                                  NEXT     *  WHT      CHARACTER            
+HIY                                  NEXT     *  WHT      CHARACTER            
+AREA                                 NEXT     *  WHT      CHARACTER            
+OWNER                                NEXT     *  WHT      CHARACTER            
+CROP                                 NEXT     *  WHT      CHARACTER            
+
+
+Table MY_FIELDS:
+  8 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                 516000 bytes(250 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          2
+Total logical records read:             8
+Total logical records rejected:         0
+Total logical records discarded:        0
+
+Run began on Wed Oct 30 13:12:20 2024
+Run ended on Wed Oct 30 13:12:28 2024
+
+Elapsed time was:     00:00:08.80
+CPU time was:         00:00:00.03

@@ -1,0 +1,11 @@
+create table my_fields
+(field_id number(5) check (field_id between 1 and 8),
+lowx number(5) check (lowx between 0 and 16),
+lowy number(5) check (lowy between 0 and 16),
+hix number(5) check (hix between 0 and 16),
+hiy number(5) check (hiy between 0 and 16),
+area number(7),
+owner varchar2(20),
+crop number(5),
+primary key (field_id),
+foreign key (crop) references my_crops (crop));

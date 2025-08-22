@@ -1,0 +1,6 @@
+create table my_crops
+(crop number(5),
+name varchar2(20),
+start_season date,
+end_season date,
+primary key (crop));

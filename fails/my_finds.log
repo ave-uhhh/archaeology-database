@@ -1,0 +1,82 @@
+
+SQL*Loader: Release 21.0.0.0.0 - Production on Tue Oct 29 10:40:25 2024
+Version 21.3.0.0.0
+
+Copyright (c) 1982, 2021, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   my_finds.ctl
+Data File:      finds.dat
+  Bad File:     finds.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 50
+Bind array:     250 rows, maximum of 1048576 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table MY_FINDS, loaded from every logical record.
+Insert option in effect for this table: REPLACE
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+FIND_ID                             FIRST     *  WHT      CHARACTER            
+XCOORD                               NEXT     *  WHT      CHARACTER            
+YCOORD                               NEXT     *  WHT      CHARACTER            
+TYPE                                 NEXT     *  WHT      CHARACTER            
+DEPTH                                NEXT     *  WHT      CHARACTER            
+FIELD_NOTES                          NEXT     *  WHT      CHARACTER            
+
+Record 2: Rejected - Error on table MY_FINDS, column FIND_ID.
+Column not found before end of logical record (use TRAILING NULLCOLS)
+Record 1: Rejected - Error on table MY_FINDS, column FIND_ID.
+ORA-01722: invalid number
+
+Record 3: Rejected - Error on table MY_FINDS.
+ORA-02291: integrity constraint (S2502571.SYS_C00291780) violated - parent key not found
+
+Record 4: Rejected - Error on table MY_FINDS.
+ORA-02291: integrity constraint (S2502571.SYS_C00291780) violated - parent key not found
+
+Record 5: Rejected - Error on table MY_FINDS.
+ORA-02291: integrity constraint (S2502571.SYS_C00291780) violated - parent key not found
+
+Record 6: Rejected - Error on table MY_FINDS.
+ORA-02291: integrity constraint (S2502571.SYS_C00291780) violated - parent key not found
+
+Record 7: Rejected - Error on table MY_FINDS.
+ORA-02291: integrity constraint (S2502571.SYS_C00291780) violated - parent key not found
+
+Record 8: Rejected - Error on table MY_FINDS.
+ORA-02291: integrity constraint (S2502571.SYS_C00291780) violated - parent key not found
+
+Record 9: Rejected - Error on table MY_FINDS.
+ORA-02291: integrity constraint (S2502571.SYS_C00291780) violated - parent key not found
+
+Record 10: Rejected - Error on table MY_FINDS.
+ORA-02291: integrity constraint (S2502571.SYS_C00291780) violated - parent key not found
+
+
+Table MY_FINDS:
+  0 Rows successfully loaded.
+  10 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                 387000 bytes(250 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:            10
+Total logical records rejected:        10
+Total logical records discarded:        0
+
+Run began on Tue Oct 29 10:40:25 2024
+Run ended on Tue Oct 29 10:40:35 2024
+
+Elapsed time was:     00:00:10.11
+CPU time was:         00:00:00.03

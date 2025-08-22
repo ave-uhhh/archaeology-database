@@ -1,0 +1,7 @@
+select my_fields.field_id, my_finds.find_id, my_class.period
+from my_fields, my_finds, my_class
+where my_finds.type=my_class.type
+and my_finds.xcoord between my_fields.lowx and my_fields.hix
+and my_finds.ycoord between my_fields.lowy and my_fields.hiy
+and my_finds.type='1'
+/

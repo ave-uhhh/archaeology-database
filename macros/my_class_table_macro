@@ -1,0 +1,6 @@
+create table my_class
+(type number(5),
+name varchar2(20),
+period varchar2(20),
+use varchar2(20),
+primary key (type));

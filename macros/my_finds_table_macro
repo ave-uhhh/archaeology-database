@@ -1,0 +1,9 @@
+create table my_finds
+(find_id number(5),
+xcoord number(5), check (xcoord between 0 and 16),
+ycoord number(5) check (ycoord between 0 and 16),
+type number(5),
+depth number(7) check (depth between 0 and 20),
+field_notes varchar2(70),
+primary key (find_id),
+foreign key (type) references my_class (type));
