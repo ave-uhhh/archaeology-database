@@ -23,7 +23,7 @@ Control files - stored in controlfiles folder
 Bad files - stored in fails folder 
 * Were created in case of error, but remained empty because data was clean and met all constraints
 
-Log files - stored in logs folder
+Log files
 * Recorded detailed session metadata and confirm inserts
 
 Macro files - stored in macros folder
