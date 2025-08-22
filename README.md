@@ -21,7 +21,14 @@ Control files - stored in controlfiles folder
 * Used to omit header information stored in the original data text files using a skip of 2
 
 Bad files - stored in fails folder 
+* Were created in case of error, but remained empty because data was clean and met all constraints
 
+Log files - stored in logs folder
+* Recorded detailed session metadata and confirm inserts
+
+Macro files - stored in macros folder
+* Query 1 identified fields containing Bronze Age artefacts
+* Query 2 retrieved finds from fields where turnips are grown
 
 Requirements
 ------------
