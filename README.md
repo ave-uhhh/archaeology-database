@@ -20,12 +20,7 @@ Data files
 Control files - stored in controlfiles folder
 * Used to omit header information stored in the original data text files using a skip of 2
 
-Bad files - stored in fails folder
-* 
-
-Logs
-
-Macros
+Bad files - stored in fails folder 
 
 
 Requirements
